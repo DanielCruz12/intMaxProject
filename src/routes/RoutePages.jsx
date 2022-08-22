@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
+import App from "../App";
+//import Home from "../pages/Home";
 
 const RoutePages = () => {
   return (
     <div>
       <div>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          
+          <Route exact path="/" element={<App />} />
         </Routes>
       </div>
     </div>
