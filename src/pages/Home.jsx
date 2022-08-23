@@ -1,11 +1,28 @@
-import React from 'react'
+import styles from '../style'
+import Navbar from '../layouts/Navbar'
+import Hero from "../layouts/Hero";
+import Stats from "../components/Stats";
+import Cards from "../components/Cards";
+import Footer from "../layouts/Footer";
+import Table from '../components/Table';
 
 const Home = () => {
   return (
-    <div className='bg-primary w-full overflow-hidden'>
-      hi
-    </div>
-  )
-}
+    <div className="bg-primary w-full overflow-hidden">
+      <Navbar />
+      <Hero />
+      <Table/>
 
-export default Home
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Stats />
+          <Cards />
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Home;
