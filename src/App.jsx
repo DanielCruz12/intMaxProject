@@ -4,6 +4,8 @@ import Navbar from "./layouts/Navbar";
 import Hero from "./layouts/Hero";
 import Stats from "./components/Stats";
 import { log, zkroll } from "./assets";
+import Cards from "./components/Cards";
+import Footer from "./layouts/Footer";
 
 function App() {
   return (
@@ -23,8 +25,11 @@ function App() {
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
         <Stats/>
+        <Cards/>
         </div>
       </div>
+      
+      <Footer/>
     </div>
   );
 }
