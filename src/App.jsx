@@ -1,8 +1,9 @@
 import "./App.css";
 import styles from "./style";
-import { Business } from "./components";
 import Navbar from "./layouts/Navbar";
 import Hero from "./layouts/Hero";
+import Stats from "./components/Stats";
+import { log, zkroll } from "./assets";
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
       </div>
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>hero</div>
+        <div className={`${styles.boxWidth}`}>
+        <Stats/>
+        </div>
       </div>
     </div>
   );

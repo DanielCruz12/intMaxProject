@@ -23,8 +23,12 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import log from './log.svg'
+import zkroll from './zkroll.svg'
 
 export {
+  zkroll,
+  log,
   airbnb,
   bill,
   binance,
