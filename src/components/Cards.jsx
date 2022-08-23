@@ -1,6 +1,6 @@
 import { features } from "../constants";
 import styles, { layout } from "../style";
-//import Button from "./Button";
+import SimpleButton from "./SimpleButton";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div
@@ -38,7 +38,7 @@ const Cards = () => {
           of credit cards on the market.
         </p>
 
-        {/* <Button/> */}
+        <SimpleButton styles={`mt-10`} />
       </div>
 
       <div className={`${layout.sectionImg} flex-col`}>
