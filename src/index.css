@@ -135,3 +135,30 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.target {
+  font-weight: bold;
+  color: #fbfbfb;
+  animation-name: rightToLeft;
+  animation: rightToLeft 20.5s linear infinite; 
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+  0% {
+    transform: translateX(100%);
+  }
+}

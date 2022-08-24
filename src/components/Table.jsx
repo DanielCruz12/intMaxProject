@@ -62,38 +62,44 @@ const Table = () => {
                   <tr>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
+                    >
+                      #
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
                     >
                       Coins
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
                     >
                       Price
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
                     >
                       listed At
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
                     >
                       rank
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
                     >
                       change
                     </th>
 
                     <th
                       scope="col"
-                      className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
                     >
                       Status
                     </th>
@@ -102,6 +108,11 @@ const Table = () => {
                 <tbody className="bg-black divide-y divide-gray-800 text-center">
                   {coins.map((coin) => (
                     <tr key={coin.id}>
+                      <td className=" whitespace-nowrap">
+                        <div className="text-sm text-white font-bold">
+                          {coin.rank}
+                        </div>
+                      </td>
                       <td className="px-6 py-3 whitespace-nowrap">
                         <div className="flex items-center">
                           <div className="flex-shrink-0 h-10 w-10">
@@ -111,31 +122,36 @@ const Table = () => {
                               alt=""
                             />
                           </div>
+
                           <div className="ml-4 pl-2">
+                            ñ
                             <div className="text-sm font-medium text-white">
                               {coin.name}
                             </div>
-                            <div className="text-sm text-gray-500">
+                            <div className="text-sm text-white font-bold">
                               {coin.symbol}
                             </div>
                           </div>
                         </div>
                       </td>
+
                       <td className="">
-                        <div className="text-sm text-white pr-3">
+                        <div className="text-sm text-white font-bold pr-3">
                           ${coin.price}
                         </div>
-                        <div className="text-sm text-gray-500 pr-3">
+                        <div className="text-sm text-gray-500 font-semibold pr-3">
                           {coin.btcPrice}
                         </div>
                       </td>
                       <td className=" whitespace-nowrap">
-                        <div className="text-sm text-gray-500">
+                        <div className="text-sm text-white font-bold">
                           {coin.listedAt}
                         </div>
                       </td>
                       <td className="px-4 py-4 whitespace-nowrap">
-                        <div className="text-sm text-gray-500">{coin.rank}</div>
+                        <div className="text-sm text-white font-bold">
+                          {coin.rank}
+                        </div>
                       </td>
                       <td className="px-4 py-4 whitespace-nowrap">
                         <div className="text-sm text-white">{coin.change}</div>

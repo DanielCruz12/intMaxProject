@@ -23,12 +23,23 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-import log from './log.svg';
-import zkroll from './zkroll.svg';
-import card1 from './card1.png';
-import card2 from './card2.png';
+import log from "./log.svg";
+import zkroll from "./zkroll.svg";
+import card1 from "./card1.png";
+import card2 from "./card2.png";
+import bsc from "./bsc.png";
+
+import ethereum from "./ethereum.png";
+import optimism from "./optimism.svg";
+import polygon from "./polygon.png";
+import arbitrum from "./arbitrum.png";
 
 export {
+  arbitrum,
+  polygon,
+  optimism,
+  ethereum,
+  bsc,
   card2,
   card1,
   zkroll,
