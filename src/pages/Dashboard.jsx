@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+/* import React, { useState, useEffect } from "react";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 //import { ProductService } from "../service/ProductService";
@@ -34,3 +34,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+ */
