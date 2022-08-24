@@ -54,7 +54,7 @@ const Table = () => {
           </div>
         </>
       ) : (
-        <div className="my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 mb-3 pb-3">
+        <div className="my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 mb-3 pb-3 w-full">
           <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
             <div className="shadow overflow-hidden border-b border-black sm:rounded-lg">
               <table className="min-w-full">

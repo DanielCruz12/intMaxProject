@@ -5,6 +5,7 @@ import Stats from "../components/Stats";
 import Cards from "../components/Cards";
 import Footer from "../layouts/Footer";
 import Table from '../components/Table';
+import Walletcard from '../components/Walletcard';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <div className={`${styles.boxWidth}`}>
           <Stats />
           <Cards />
+          <Walletcard/>
         </div>
       </div>
 
