@@ -1,5 +1,5 @@
 import binance from "./binance.png";
-import logo from "./intmaxlogo.png";
+import logo from "./intmaxlog.png";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import shield from "./Shield.svg";
@@ -28,8 +28,10 @@ import arbitrum from "./arbitrum.png";
 import send from './send.svg';
 import astar from './astar.png';
 import card3 from './card3.png';
+import intmaxlogo from './intmaxlogo.png';
 
 export {
+  intmaxlogo,
   astar,
   arbitrum,
   polygon,

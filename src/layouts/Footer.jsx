@@ -1,6 +1,6 @@
 import styles from "../style";
 import { footerLinks } from "../constants";
-import { instagram, logo } from "../assets";
+import { instagram, intmaxlogo } from "../assets";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={`${styles.flexCenter} md:flex-row flex-col mb-8 w-full`}>
           <div className="flex-1 flex flex-col justify-center mr-10">
             <img
-              src={logo}
+              src={intmaxlogo}
               alt="logo"
               className="w-[184px] h-[42px] object-contain"
             />
