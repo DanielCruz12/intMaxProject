@@ -6,10 +6,6 @@ import {
   instagram,
   linkedin,
   twitter,
-  airbnb,
-  binance,
-  coinbase,
-  dropbox,
   send,
   shield,
   star,
@@ -18,6 +14,7 @@ import {
   optimism,
   polygon,
   arbitrum,
+  astar
 } from "../assets";
 
 export const navLinks = [
@@ -114,23 +111,19 @@ export const footerLinks = [
     links: [
       {
         name: "Content",
-        link: "https://www.hoobank.com/content/",
+        link: "https://lappswallet.vercel.app/login",
       },
       {
         name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        link: "https://lappswallet.vercel.app/login",
       },
       {
         name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        link: "https://lappswallet.vercel.app/login",
       },
       {
         name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        link: "https://lappswallet.vercel.app/login",
       },
     ],
   },
@@ -139,23 +132,29 @@ export const footerLinks = [
     links: [
       {
         name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        link: "https://lappswallet.vercel.app/login",
       },
       {
         name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        link: "https://lappswallet.vercel.app/login",
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        link: "https://lappswallet.vercel.app/login",
+      },
+  
+    ],
+  },
+  {
+    title: "Partner",
+    links: [
+      {
+        name: "Our Partner",
+        link: "https://lappswallet.vercel.app/login",
       },
       {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        name: "Become a Partner",
+        link: "https://lappswallet.vercel.app/login",
       },
     ],
   },
@@ -164,11 +163,24 @@ export const footerLinks = [
     links: [
       {
         name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        link: "https://lappswallet.vercel.app/login",
       },
       {
         name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        link: "https://lappswallet.vercel.app/login",
+      },
+    ],
+  },
+  {
+    title: "Partner",
+    links: [
+      {
+        name: "Our Partner",
+        link: "https://lappswallet.vercel.app/login",
+      },
+      {
+        name: "Become a Partner",
+        link: "https://lappswallet.vercel.app/login",
       },
     ],
   },
@@ -205,14 +217,23 @@ export const clients = [
 
   {
     id: "client-2",
-    logo: polygon,
+    logo: ethereum,
   },
   {
     id: "client-3",
-    logo: optimism,
+    logo: polygon,
   },
   {
     id: "client-4",
+    logo: optimism,
+  },
+  {
+    id: "client-5",
     logo: arbitrum,
   },
+  {
+    id: "client-6",
+    logo: astar,
+  },
+ 
 ];

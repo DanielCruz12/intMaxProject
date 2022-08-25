@@ -13,7 +13,7 @@ const Companies = () => {
             <img
               src={company.logo}
               alt="company"
-              className={`sm:w-[192px] w-[100px] object-contain target`}
+              className={`sm:w-[192px] w-[100px] object-contain target opacity-60 hover:opacity-100`}
             ></img>
           </div>
         ))}

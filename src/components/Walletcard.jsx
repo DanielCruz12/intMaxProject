@@ -1,5 +1,5 @@
 import styles, { layout } from "../style";
-import { card1, card2 } from "../assets";
+import { card1, card2, card3 } from "../assets";
 import SimpleButton from "./SimpleButton";
 import Companies from "./Companies";
 
@@ -9,12 +9,12 @@ const Walletcard = () => {
       <section id="product" className={layout.sectionReverse}>
         <div className={layout.sectionImgReverse}>
           <img
-            src={card1}
+            src={card3}
             alt="cardWallet"
             className="w-[100%] h-[100%] relative z-[5]"
           ></img>
         </div>
-        <div className={layout.sectionInfo}>
+        <div className={`${layout.sectionInfo} ${styles.flexCenter}`}>
           <h2 className={styles.heading2}>
             Easily control your <br className="sm:block hidden" /> Billing and
             invoicing.
@@ -28,8 +28,9 @@ const Walletcard = () => {
           </p>
         </div>
       </section>
+
       <section id="" className={layout.section}>
-        <div className={layout.sectionInfo}>
+        <div className={`${layout.sectionInfo} ${styles.flexCenter}`}>
           <h2 className={styles.heading2}>
             Easily control your <br className="sm:block hidden" /> Billing and
             invoicing.
