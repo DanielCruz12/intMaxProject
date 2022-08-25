@@ -14,7 +14,7 @@ import {
   optimism,
   polygon,
   arbitrum,
-  astar
+  astar,
 } from "../assets";
 
 export const navLinks = [
@@ -142,33 +142,6 @@ export const footerLinks = [
         name: "Blog",
         link: "https://lappswallet.vercel.app/login",
       },
-  
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://lappswallet.vercel.app/login",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://lappswallet.vercel.app/login",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://lappswallet.vercel.app/login",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://lappswallet.vercel.app/login",
-      },
     ],
   },
   {
@@ -235,5 +208,4 @@ export const clients = [
     id: "client-6",
     logo: astar,
   },
- 
 ];

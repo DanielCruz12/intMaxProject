@@ -6,7 +6,9 @@ const Footer = () => {
   return (
     <>
       <section className={`${styles.flexCenter} ${styles.paddingY} flex-col `}>
-        <div className={`${styles.flexCenter} md:flex-row flex-col mb-8 w-full`}>
+        <div
+          className={`${styles.flexCenter} md:flex-row flex-col mb-8 w-full`}
+        >
           <div className="flex-1 flex flex-col justify-center mr-10">
             <img
               src={intmaxlogo}
@@ -21,8 +23,8 @@ const Footer = () => {
           <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
             {footerLinks.map((footerLink) => (
               <div
+                key={footerLink.name}
                 className="flex flex-col ss:my-0 my-4 min-w-[150px]"
-                key={footerLink.key}
               >
                 <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
                   {footerLink.title}
@@ -88,7 +90,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={instagram}/>
+                <img src={instagram} />
               </a>
               <a
                 href="https://github.com/InternetMaximalism"
@@ -119,4 +121,3 @@ const Footer = () => {
 };
 
 export default Footer;
- 
