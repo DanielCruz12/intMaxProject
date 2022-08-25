@@ -25,7 +25,7 @@ import ethereum from "./ether.png";
 import optimism from "./optimism.svg";
 import polygon from "./polygon.png";
 import arbitrum from "./arbitrum.png";
-import send from './send.svg';
+import send from './Send.svg';
 import astar from './astar.png';
 import card3 from './card3.png';
 import intmaxlogo from './intmaxlogo.png';
