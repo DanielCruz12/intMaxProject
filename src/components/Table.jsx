@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { API_URL } from "../config";
 import Axios from "axios";
 
-const Table = () => {
+export const Table = () => {
   const [coins, setCoins] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -25,8 +25,8 @@ const Table = () => {
   };
 
   Axios.request(options)
-    .then(function (response) {
-      setCoins(response.data.data.coins);
+    .then(function (res) {
+      setCoins(res.data.data.coins);
       setLoading(false);
     })
     .catch(function (error) {
@@ -177,4 +177,3 @@ const Table = () => {
   );
 };
 
-export default Table;

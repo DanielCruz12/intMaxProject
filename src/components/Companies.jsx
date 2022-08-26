@@ -1,7 +1,7 @@
 import { clients } from "../constants";
 import styles from "../style";
 
-const Companies = () => {
+export const Companies = () => {
   return (
     <div className={`${styles.flexCenter} my-4 wrapper`}>
       <div className={`${styles.flexCenter} flex-wrap w-full`}>
@@ -22,4 +22,3 @@ const Companies = () => {
   );
 };
 
-export default Companies;

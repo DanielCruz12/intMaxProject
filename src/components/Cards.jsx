@@ -24,10 +24,10 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 );
 
-const Cards = () => {
+export const Cards = () => {
   return (
     <section id="features" className={layout.section}>
-      <div className={`${layout.sectionInfo} ${styles.flexCenter}`} >
+      <div className={`${layout.sectionInfo} ${styles.flexCenter}`}>
         <h2 className={styles.heading2}>
           You do the business, <br className="sm:block hidden" /> we’ll handle
           the money.
@@ -50,4 +50,3 @@ const Cards = () => {
   );
 };
 
-export default Cards;
