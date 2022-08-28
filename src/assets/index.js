@@ -1,7 +1,7 @@
 import binance from "./binance.png";
 import logo from "./intmaxlog.png";
 import quotes from "./quotes.svg";
-import robot from "./robot.png";
+import robot from "./r4.png";
 import shield from "./Shield.svg";
 import star from "./Star.svg";
 import menu from "./menu.svg";
@@ -25,12 +25,14 @@ import ethereum from "./ether.png";
 import optimism from "./optimism.svg";
 import polygon from "./polygon.png";
 import arbitrum from "./arbitrum.png";
-import send from './Send.svg';
+import send from './send.png';
 import astar from './astar.png';
 import card3 from './card3.png';
 import intmaxlogo from './intmaxlogo.png';
+import bg from './bg.png'
 
 export {
+  bg,
   intmaxlogo,
   astar,
   arbitrum,

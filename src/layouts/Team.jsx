@@ -1,9 +1,30 @@
-import React from 'react'
+import React from "react";
+import { people01 } from "../assets";
+import { people02 } from "../assets";
+import { people03 } from "../assets";
+import style from '../style'
 
 const Team = () => {
   return (
-    <div>Team</div>
-  )
-}
+    <>
+      {/*  <div className={`${style.flexCenter} p-2 my-3 team`}>
+        <div className="cardTeam" >
+            <div className="content">
+                <div className="img">
+                    <img src={people01}/>
+                </div>
+                <div className="details">
+                    <span className="name">Ruchi William</span>
+                    <p>Front-End Developer</p>
+                </div>
+            </div>
+            <a href="#">Follow</a>
+        </div>
 
-export default Team
+    </div> */}
+
+    </>
+  );
+};
+
+export default Team;

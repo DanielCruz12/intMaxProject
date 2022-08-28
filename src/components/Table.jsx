@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { API_URL } from "../config";
 import Axios from "axios";
+import { numberFormat } from "./Number";
+import { AiOutlineArrowUp } from "react-icons/Ai";
+import { AiOutlineArrowDown } from "react-icons/Ai";
 
 export const Table = () => {
   const [coins, setCoins] = useState([]);
@@ -11,7 +14,7 @@ export const Table = () => {
     url: API_URL,
     params: {
       referenceCurrencyUuid: "yhjMzLPhuIDl",
-      timePeriod: "24h",
+      timePeriod: "3h",
       "tiers[0]": "1",
       orderBy: "marketCap",
       orderDirection: "desc",
@@ -64,12 +67,6 @@ export const Table = () => {
                       scope="col"
                       className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
                     >
-                      #
-                    </th>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
-                    >
                       Coins
                     </th>
                     <th
@@ -82,19 +79,19 @@ export const Table = () => {
                       scope="col"
                       className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
                     >
-                      listed At
+                      Change
                     </th>
                     <th
                       scope="col"
                       className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
                     >
-                      rank
+                      MarketCap
                     </th>
                     <th
                       scope="col"
                       className="px-6 py-3 text-center text-xs font-medium text-white font-extrabold uppercase tracking-wider"
                     >
-                      change
+                      Rank
                     </th>
 
                     <th
@@ -108,11 +105,6 @@ export const Table = () => {
                 <tbody className="bg-black divide-y divide-gray-800 text-center">
                   {coins.map((coin) => (
                     <tr key={coin.id}>
-                      <td className=" whitespace-nowrap">
-                        <div className="text-sm text-white font-bold">
-                          {coin.rank}
-                        </div>
-                      </td>
                       <td className="px-6 py-3 whitespace-nowrap">
                         <div className="flex items-center">
                           <div className="flex-shrink-0 h-10 w-10">
@@ -137,24 +129,38 @@ export const Table = () => {
 
                       <td className="">
                         <div className="text-sm text-white font-bold pr-3">
-                          ${coin.price}
+                          {numberFormat(coin.price)}
                         </div>
                         <div className="text-sm text-gray-500 font-semibold pr-3">
-                          {coin.btcPrice}
+                          {numberFormat(coin.btcPrice)}
+                        </div>
+                      </td>
+
+                      <td className="p-3 ">
+                        <div
+                          className={`text-sm m-2 mt-3 ${
+                            coin.change > 0 ? "text-green " : "text-red"
+                          }`}
+                        >
+                          <div>
+                            {coin.change > 0 ? (
+                              <AiOutlineArrowUp />
+                            ) : (
+                              <AiOutlineArrowDown />
+                            )}
+                            {coin.change}
+                          </div>
                         </div>
                       </td>
                       <td className=" whitespace-nowrap">
                         <div className="text-sm text-white font-bold">
-                          {coin.listedAt}
+                          {coin.marketCap}
                         </div>
                       </td>
                       <td className="px-4 py-4 whitespace-nowrap">
                         <div className="text-sm text-white font-bold">
                           {coin.rank}
                         </div>
-                      </td>
-                      <td className="px-4 py-4 whitespace-nowrap">
-                        <div className="text-sm text-white">{coin.change}</div>
                       </td>
 
                       <td className="px-6 py-4 whitespace-nowrap">
@@ -176,4 +182,3 @@ export const Table = () => {
     </div>
   );
 };
-

@@ -1,5 +1,5 @@
 import styles from "../style";
-import { Hero, Footer, Navbar } from "../layouts";
+import { Hero, Footer, Navbar, Team } from "../layouts";
 import { Stats, Cards, Table } from "../components";
 import Walletcard from "../components/Walletcard";
 import Advantage from "../components/Advantage";
@@ -19,7 +19,7 @@ const Home = () => {
           <Advantage/>
         </div>
       </div>
-
+      <Team/>
       <Footer />
     </div>
   );
