@@ -29,9 +29,13 @@ import send from './send.png';
 import astar from './astar.png';
 import card3 from './card3.png';
 import intmaxlogo from './intmaxlogo.png';
-import bg from './bg.png'
+import bg from './bg.png';
+import up from './increase.png';
+import down from './decrease.png';
 
 export {
+  up,
+  down,
   bg,
   intmaxlogo,
   astar,

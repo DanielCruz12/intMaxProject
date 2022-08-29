@@ -28,11 +28,11 @@ export const navLinks = [
   },
   {
     id: "product",
-    title: "Product",
+    title: "Substation",
   },
   {
     id: "clients",
-    title: "Clients",
+    title: "Advantages",
   },
 ];
 
@@ -40,9 +40,9 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "NFTs",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "You are someone that is all about NFTs and want a wallet with NFT privacy.",
   },
   {
     id: "feature-2",
@@ -54,9 +54,9 @@ export const features = [
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Connect to apps",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "protocol to communicate securely between Intmax Wallet and Dapps (Web3 Apps).",
   },
 ];
 
@@ -90,18 +90,18 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Average block time",
+    value: "5s",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Total blocks",
+    value: "+3,553,125",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Wallet addresses",
+    value: "+160",
   },
 ];
 

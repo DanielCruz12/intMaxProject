@@ -19,11 +19,8 @@ const WalletCard = () => {
             invoicing.
           </h2>
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-            Lightning Network Wallet only It can be used for both Laptop and
-            mobile. The native token of our network is called ESAT token, and to
-            apply to receive ESAT token, you will need ethereum address to
-            receive Lightning network payment and ESAT token. We also have an
-            official WALLET available.
+            Browser extension wallets are extensions you download that let you
+            interact with your account and applications through the browser
           </p>
         </div>
       </section>
@@ -31,15 +28,13 @@ const WalletCard = () => {
       <section id="" className={layout.section}>
         <div className={`${layout.sectionInfo} ${styles.flexCenter}`}>
           <h2 className={styles.heading2}>
-            Easily control your <br className="sm:block hidden" /> Billing and
-            invoicing.
+          Making payment via <br className="sm:block hidden" />QR extremely fast
           </h2>
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-            You can also initiate transactions yourself, from
-            https://wallet.lappsnet.io/wallet. Choose whether you want to send
-            ESATs (the native currency of Lappsnet), or other tokens. TIP:
-            Clicking on a token in the list will open a create transaction form
-            for that token!
+            QR code in payment One of the best and biggest advantages of QR
+            codes is that facilities for instant payment. Making payment via QR
+            codes is extremely fast. User
+            simply open the QR code scan app, scan the QR code and confirm
           </p>
         </div>
 

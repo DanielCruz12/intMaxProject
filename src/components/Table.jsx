@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { API_URL } from "../config";
 import Axios from "axios";
 import { numberFormat } from "./Number";
-import { AiOutlineArrowUp } from "react-icons/Ai";
-import { AiOutlineArrowDown } from "react-icons/Ai";
+import { down, up } from "../assets";
+/* import { AiOutlineArrowUp } from "react-icons/ai";
+import { AiOutlineArrowDown } from "react-icons/ai"; */
 
 export const Table = () => {
   const [coins, setCoins] = useState([]);
@@ -116,7 +117,6 @@ export const Table = () => {
                           </div>
 
                           <div className="ml-4 pl-2">
-                            ñ
                             <div className="text-sm font-medium text-white">
                               {coin.name}
                             </div>
@@ -144,9 +144,9 @@ export const Table = () => {
                         >
                           <div>
                             {coin.change > 0 ? (
-                              <AiOutlineArrowUp />
+                              <img src={up} className="max-w-[18px]"></img>
                             ) : (
-                              <AiOutlineArrowDown />
+                              <img src={down} className="max-w-[18px]"></img>
                             )}
                             {coin.change}
                           </div>

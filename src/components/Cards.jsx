@@ -11,7 +11,11 @@ const FeatureCard = ({ icon, title, content, index }) => (
     <div
       className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
     >
-      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain text-white"/>
+      <img
+        src={icon}
+        alt="star"
+        className="w-[50%] h-[50%] object-contain text-white"
+      />
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
@@ -29,13 +33,12 @@ export const Cards = () => {
     <section id="features" className={layout.section}>
       <div className={`${layout.sectionInfo} ${styles.flexCenter}`}>
         <h2 className={styles.heading2}>
-          You do the business, <br className="sm:block hidden" /> we’ll handle
-          the money.
+         Your money, <br className="sm:block hidden" /> your rules.
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          With the right credit card, you can improve your financial life by
-          building credit, earning rewards and saving money. But with hundreds
-          of credit cards on the market.
+          We create a world where users and communities can achieve financial
+          success and technical stability with a high privacy on transactions
+          and no censorship.
         </p>
 
         <SimpleButton styles={`mt-10`} />
