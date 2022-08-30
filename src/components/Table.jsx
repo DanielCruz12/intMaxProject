@@ -10,11 +10,10 @@ export const Table = () => {
   const [coins, setCoins] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const getData = async (e) => {
-    e.preventDefault();
+  const getData = async () => {
     try {
       const res = await Axios.get(API_URL, {
-        headers: {
+        headers: { 
           "X-RapidAPI-Key":
             "455affff65mshe9ffe19f6d57db7p152bcejsncff8d11bc367",
           "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
