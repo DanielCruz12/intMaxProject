@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { API_URL } from "../config";
 import Axios from "axios";
 import { numberFormat } from "./Number";
@@ -10,32 +10,35 @@ export const Table = () => {
   const [coins, setCoins] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const options = {
-    method: "GET",
-    url: API_URL,
-    params: {
-      referenceCurrencyUuid: "yhjMzLPhuIDl",
-      timePeriod: "3h",
-      "tiers[0]": "1",
-      orderBy: "marketCap",
-      orderDirection: "desc",
-      limit: "4",
-      offset: "0",
-    },
-    headers: {
-      "X-RapidAPI-Key": "455affff65mshe9ffe19f6d57db7p152bcejsncff8d11bc367",
-      "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
-    },
-  };
-
-  Axios.request(options)
-    .then(function (res) {
+  const getData = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await Axios.get(API_URL, {
+        headers: {
+          "X-RapidAPI-Key":
+            "455affff65mshe9ffe19f6d57db7p152bcejsncff8d11bc367",
+          "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
+        },
+        params: {
+          referenceCurrencyUuid: "yhjMzLPhuIDl",
+          timePeriod: "3h",
+          "tiers[0]": "1",
+          orderBy: "marketCap",
+          orderDirection: "desc",
+          limit: "4",
+          offset: "0",
+        },
+      });
       setCoins(res.data.data.coins);
       setLoading(false);
-    })
-    .catch(function (error) {
-      console.error(error);
-    });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <div className="flex justify-center mb-5 ">
