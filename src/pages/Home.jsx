@@ -3,7 +3,7 @@ import { Hero, Footer, Navbar, Team } from "../layouts";
 import { Stats, Cards, Table } from "../components";
 import Walletcard from "../components/Walletcard";
 import Advantage from "../components/Advantage";
-import FAQ from "../components/FAQ";
+import Faq from "../components/Faq";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
           <Stats />
           <Cards />
           <Walletcard />
-          <FAQ/>
+          <Faq/>
           <Advantage/>
         </div>
       </div>
