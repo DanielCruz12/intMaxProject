@@ -1,7 +1,7 @@
 import styles from "../style.js";
 import {faqAction} from '../services/faqAction'
 
-const FAQ = () => {
+const Faq = () => {
   return (
     <div>
       <div className="container">
@@ -410,4 +410,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default Faq;
