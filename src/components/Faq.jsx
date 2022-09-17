@@ -65,7 +65,7 @@ const Faq = () => {
               "
               onClick={() => setExpand(!expand)}
             >
-              <div className="flex items-center w-full h-2 text-left">
+              <div className="flex items-center w-full text-left">
                 <div
                   className={`${ri} w-full
                     max-w-[40px]
@@ -96,16 +96,16 @@ const Faq = () => {
 
                 <div className="w-full">
                   <h4 className="expandClass text-base sm:text-lg font-semibold text-white">
-                    Can I use this template for commercial project?
+                    How to create transactions?
                   </h4>
                 </div>
               </div>
               <div className={`${ansClass} pl-[62px]`}>
-                <p className="text-base text-white leading-relaxed py-3">
-                  It takes 2-3 weeks to get your first blog post ready. That
-                  includes the in-depth research & creation of your monthly
-                  content marketing strategy that we do before writing your
-                  first blog post, Ipsum available.
+                <p className="text-base text-white leading-relaxed py-3 text-left">
+                  The user is asked to create a transaction. Defaults to sending
+                  ESATs (Lappsnet’s native token), unless contractAddress is
+                  specified. All parameters given are entered in the form
+                  presented to the user, but the user may edit these values.
                 </p>
               </div>
             </div>
@@ -124,7 +124,7 @@ const Faq = () => {
               "
               onClick={() => setExpand2(!expand2)}
             >
-              <div className="flex items-center w-full h-2 text-left">
+              <div className="flex items-center w-full text-left">
                 <div
                   className={`${ri2} w-full
                     max-w-[40px]
@@ -154,17 +154,24 @@ const Faq = () => {
                 </div>
 
                 <div className="w-full">
-                  <h4 className="expandClass text-base sm:text-lg font-semibold text-white">
-                    Can I use this template for commercial project?
+                  <h4 className="expandClass text-base sm:text-lg font-semibold text-white pt-4">
+                    How to get ESAT tokens?
                   </h4>
                 </div>
               </div>
               <div className={`${ansClass2} pl-[62px]`}>
-                <p className="text-base text-white leading-relaxed py-3">
-                  It takes 2-3 weeks to get your first blog post ready. That
-                  includes the in-depth research & creation of your monthly
-                  content marketing strategy that we do before writing your
-                  first blog post, Ipsum available.
+                <p className="text-base text-white leading-relaxed py-3 text-left">
+                  Visit the{" "}
+                  <a
+                    href="https://web.lappsnet.io/"
+                    target="_blank"
+                    className="text-blue-500"
+                  >
+                    Lappsnet website
+                  </a>{" "}
+                  to purchase ESAT tokens at a rate of 100 ESAT 100 satoshi.
+                  Make sure the address you want to receive tokens is correct
+                  before pressing the button. Minimum amount is 100.
                 </p>
               </div>
             </div>
@@ -185,7 +192,7 @@ const Faq = () => {
               "
               onClick={() => setExpand3(!expand3)}
             >
-              <div className="flex items-center w-full h-2 text-left">
+              <div className="flex items-center w-full text-left">
                 <div
                   className={`${ri3} w-full
                     max-w-[40px]
@@ -215,17 +222,18 @@ const Faq = () => {
                 </div>
 
                 <div className="w-full">
-                  <h4 className="expandClass text-base sm:text-lg font-semibold text-white">
-                    Can I use this template for commercial project?
+                  <h4 className="expandClass text-base sm:text-lg font-semibold text-white pt-4">
+                    How to withdraw to LN?
                   </h4>
                 </div>
               </div>
               <div className={`${ansClass3} pl-[62px]`}>
-                <p className="text-base text-white leading-relaxed py-3">
-                  It takes 2-3 weeks to get your first blog post ready. That
-                  includes the in-depth research & creation of your monthly
-                  content marketing strategy that we do before writing your
-                  first blog post, Ipsum available.
+                <p className="text-base text-white leading-relaxed py-3 text-left">
+                  while you are logged into your lappsnet wallet. You will be
+                  asked to provide an invoice, Note that we charge a 2% fee on
+                  withdrawals to cover any potential Lightning Network fees. You
+                  can also withdraw to LN while logged in using your recovery
+                  key.
                 </p>
               </div>
             </div>
@@ -244,7 +252,7 @@ const Faq = () => {
               "
               onClick={() => setExpand4(!expand4)}
             >
-              <div className="flex items-center w-full h-2 text-left">
+              <div className="flex items-center w-full text-left">
                 <div
                   className={`${ri4} w-full
                     max-w-[40px]
@@ -274,17 +282,18 @@ const Faq = () => {
                 </div>
 
                 <div className="w-full">
-                  <h4 className="expandClass text-base sm:text-lg font-semibold text-white">
-                    Can I use this template for commercial project?
+                  <h4 className="expandClass text-base sm:text-lg font-semibold text-white pt-4">
+                    How to Signing transactions?
                   </h4>
                 </div>
               </div>
               <div className={`${ansClass4} pl-[62px]`}>
-                <p className="text-base text-white leading-relaxed py-3">
-                  It takes 2-3 weeks to get your first blog post ready. That
-                  includes the in-depth research & creation of your monthly
-                  content marketing strategy that we do before writing your
-                  first blog post, Ipsum available.
+                <p className="text-base text-white leading-relaxed py-3 text-left">
+                  Some dApps may prepare a transaction for you to sign. Once on
+                  Lappsnet Wallet, check the contents of the transaction before
+                  signing. THIS IS CRUCIAL! If the transaction looks fine
+                  (destination address, amount, etc.), sign it. The transaction
+                  will be broadcast, and the dapp will be notified.
                 </p>
               </div>
             </div>

@@ -8,7 +8,7 @@ export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className={`${styles.paddingX} ${styles.flexCenter} fixed z-10 mb-20`}>
+    <div className={`${styles.paddingX} ${styles.flexCenter} fixed z-10 mb-24 bgG w-full`}>
       <div className={`${styles.boxWidth}`}>
         <nav className="mx-2 px-2 mb-4 w-full flex py-6 justify-center items-center navbar">
           <img src={logo} className="w-[44px] h-[42px]" alt="intmaxLogo"></img>

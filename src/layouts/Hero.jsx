@@ -14,7 +14,7 @@ export const Hero = () => {
           <div
             className={`flex-1 ${styles.flexCenter} flex-col xl:px-0 sm:px-16 px-6`}
           >
-            <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 mt-14 md:mt-4">
+            <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2 mt-24 md:mt-10">
               
               <p className={`${styles.paragraph} ml-2`}>
                 <span className="text-white">Claim a </span>

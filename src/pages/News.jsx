@@ -2,7 +2,7 @@ import axios from "axios";
 import dayjs from "dayjs";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Navbar } from "../layouts";
+import { Footer, Navbar } from "../layouts";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -54,7 +54,7 @@ const News = () => {
                       {/* <Dayjs format="dddd, h:mm A, MMMM">
                         {index.datePublished}
                       </Dayjs> */}
-                    {index.datePublished}
+                      {index.datePublished}
                     </span>
                     <h3 className="font-semibold text-white text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
                       {index.name}
@@ -77,6 +77,7 @@ const News = () => {
           </Link>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
