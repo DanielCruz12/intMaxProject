@@ -28,7 +28,7 @@ export const navLinks = [
     title: "Substation",
   },
   {
-    id: "clients",
+    id: "advantages",
     title: "Advantages",
   },
 ];

@@ -17,11 +17,11 @@ const Home = () => {
           <Stats />
           <Cards />
           <Walletcard />
-          <Faq/>
-          <Advantage/>
+          <Faq />
+          <Advantage />
         </div>
       </div>
-      <Team/>
+      <Team />
       <Footer />
     </div>
   );

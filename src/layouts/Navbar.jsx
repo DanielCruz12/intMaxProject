@@ -2,14 +2,15 @@ import { useState } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import styles from "../style";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`${styles.paddingX} ${styles.flexCenter} fixed z-10 mb-20`}>
       <div className={`${styles.boxWidth}`}>
-        <nav className="w-full flex py-6 justify-between items-center navbar">
+        <nav className="mx-2 px-2 mb-4 w-full flex py-6 justify-center items-center navbar">
           <img src={logo} className="w-[44px] h-[42px]" alt="intmaxLogo"></img>
 
           <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -23,6 +24,12 @@ export const Navbar = () => {
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
+            <Link
+              className="font-poppins font-normal cursor-pointer text-[16px] text-white ml-10 "
+              to="/blog"
+            >
+              Blog
+            </Link>
           </ul>
 
           <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -49,6 +56,12 @@ export const Navbar = () => {
                     <a href={`#${nav.id}`}>{nav.title}</a>
                   </li>
                 ))}
+                <Link
+                  className="font-poppins font-normal cursor-pointer text-[16px] text-white m-4"
+                  to="/blog"
+                >
+                  Blog
+                </Link>
               </ul>
             </div>
           </div>
@@ -57,4 +70,3 @@ export const Navbar = () => {
     </div>
   );
 };
-

@@ -4,7 +4,7 @@ import SimpleButton from "./SimpleButton";
 const Advantage = () => {
   return (
     <>
-      <section className="relative pt-36 lg:pb-10 overflow-hidden mb-6 ">
+      <section  id="home" className="relative pt-36 lg:pb-10 overflow-hidden mb-6 ">
         <div className="relative z-10 container mx-auto px-4 ">
           <div className="flex flex-wrap -m-6">
             <div className="w-full lg:w-1/2 p-6">
