@@ -1,7 +1,4 @@
 import React from "react";
-import { people01 } from "../assets";
-import { people02 } from "../assets";
-import { people03 } from "../assets";
 import style from '../style'
 
 const Team = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { discount, robot } from "../assets";
+import { bg } from "../assets";
 import { Button } from "../components";
 import styles from "../style";
 
@@ -47,7 +47,7 @@ export const Hero = () => {
             className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
           >
             <img
-              src={robot}
+              src={bg}
               className="w-[100%] h-[100%] relative z-[5]"
               alt="robot"
             />

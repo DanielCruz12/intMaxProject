@@ -9,7 +9,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
     } feature-card`}
   >
     <div
-      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-gray-300`}
     >
       <img
         src={icon}
@@ -33,7 +33,7 @@ export const Cards = () => {
     <section id="features" className={layout.section}>
       <div className={`${layout.sectionInfo} ${styles.flexCenter}`}>
         <h2 className={styles.heading2}>
-         Your money, <br className="sm:block hidden" /> your rules.
+          Your money, <br className="sm:block hidden" /> your rules.
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           We create a world where users and communities can achieve financial
