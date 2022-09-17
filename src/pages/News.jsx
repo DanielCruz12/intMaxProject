@@ -1,5 +1,5 @@
 import axios from "axios";
-import DayJS from 'react-dayjs';
+import dayjs from "dayjs";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "../layouts";
@@ -7,6 +7,7 @@ import { Navbar } from "../layouts";
 const News = () => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
+  const day = dayjs();
 
   const getData = async () => {
     try {
@@ -32,9 +33,8 @@ const News = () => {
     getData();
   }, []);
   return (
-    
     <div className="bg-primary w-full overflow-hidden">
-    <Navbar/>
+      <Navbar />
       <section className="pt-20 lg:pt-[120px] pb-10 lg:pb-20 mx-10 md:mx-20">
         <div className="container">
           <div className="flex flex-wrap -mx-4">
@@ -50,9 +50,12 @@ const News = () => {
                     </div>
                   </div>
                   <div>
-                       <span className="bg-purple-700 rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-white mb-5">
-                 <DayJS format="dddd, h:mm A, MMMM">{index.datePublished}</DayJS>
-                  </span> 
+                    <span className="bg-purple-700 rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-white mb-5">
+                      {/* <Dayjs format="dddd, h:mm A, MMMM">
+                        {index.datePublished}
+                      </Dayjs> */}
+                    {index.datePublished}
+                    </span>
                     <h3 className="font-semibold text-white text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
                       {index.name}
                     </h3>
@@ -69,9 +72,9 @@ const News = () => {
               </div>
             ))}
           </div>
-            <Link to="/" className="text-white">
-              Regresar
-            </Link>
+          <Link to="/" className="text-white">
+            Regresar
+          </Link>
         </div>
       </section>
     </div>
