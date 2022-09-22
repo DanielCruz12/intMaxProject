@@ -12,7 +12,7 @@ const News = () => {
   const getData = async () => {
     try {
       const res = await axios.get(
-        "https://bing-news-search1.p.rapidapi.com/news/search?q=ethereum&freshness=Day&textFormat=Raw&safeSearch=Strict&originalImg=true&setLang=en",
+        "https://bing-news-search1.p.rapidapi.com/news/search?q=ethereum&freshness=Week&textFormat=Raw&safeSearch=Strict&originalImg=true&setLang=en&count=9",
         {
           headers: {
             "X-BingApis-SDK": "true",
