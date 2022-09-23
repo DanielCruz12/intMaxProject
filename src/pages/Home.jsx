@@ -18,10 +18,10 @@ const Home = () => {
           <Cards />
           <Walletcard />
           <Faq />
+          <Team />
           <Advantage />
         </div>
       </div>
-      <Team />
       <Footer />
     </div>
   );
