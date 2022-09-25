@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { close, logo, menu } from "../assets";
-import { navLinks } from "../constants";
 import styles from "../style";
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+export const NavbarBlog = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -22,16 +21,6 @@ export const Navbar = () => {
             >
               Home
             </Link>
-            {navLinks.map((nav, index) => (
-              <li
-                key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                  index === navLinks.length - 1 ? "mr-0" : "mr-10"
-                } text-white `}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
             <Link
               className="font-poppins font-normal cursor-pointer text-[16px] text-white ml-10 "
               to="/blog"
@@ -60,16 +49,7 @@ export const Navbar = () => {
                 >
                   Home
                 </Link>
-                {navLinks.map((nav, index) => (
-                  <li
-                    key={nav.id}
-                    className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                      index === navLinks.length - 1 ? "mr-0" : "mb-4"
-                    } text-white `}
-                  >
-                    <a href={`#${nav.id}`}>{nav.title}</a>
-                  </li>
-                ))}
+                
                 <Link
                   className="font-poppins font-normal cursor-pointer text-[16px] text-white m-4"
                   to="/blog"

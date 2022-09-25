@@ -19,16 +19,16 @@ const Faq = () => {
   const expandClass4 = expand4 ? "display" : "hidden";
   const ansClass4 = `${expandClass4}`;
 
-  const rotateIcon = expand ? "rotate-80" : "rotate-180";
+  const rotateIcon = expand ? "rotate-180" : "";
   const ri = `${rotateIcon}`;
 
-  const rotateIcon2 = expand2 ? "rotate-80" : "rotate-180";
+  const rotateIcon2 = expand2 ? "rotate-180" : "";
   const ri2 = `${rotateIcon2}`;
 
-  const rotateIcon3 = expand3 ? "rotate-80" : "rotate-180";
+  const rotateIcon3 = expand3 ? "rotate-180" : "";
   const ri3 = `${rotateIcon3}`;
 
-  const rotateIcon4 = expand4 ? "rotate-80" : "rotate-180";
+  const rotateIcon4 = expand4 ? "rotate-180" : "";
   const ri4 = `${rotateIcon4}`;
 
   return (
@@ -37,13 +37,10 @@ const Faq = () => {
         <div className={`${styles.flexCenter}`}>
           <div className="w-full px-4">
             <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[620px]">
-              <span className="font-semibold text-lg text-white mb-2 block">
-                FAQ
-              </span>
-              <h2 className={styles.heading2}>Any Questions? Answered</h2>
+             
+              <h2 className={styles.heading2}>Any Questions?</h2>
               <p className={`${styles.paragraph} mt-2`}>
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
+              Check Frequently Asked Questions for Lappsnet.
               </p>
             </div>
           </div>

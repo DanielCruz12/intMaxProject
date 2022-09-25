@@ -6,7 +6,8 @@ const RoutePages = () => {
   return (
       <div>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} /> 
+          <Route exact path="/home" element={<Home />} /> 
           <Route exact path="/blog" element={<News />} />
        </Routes>
       </div>

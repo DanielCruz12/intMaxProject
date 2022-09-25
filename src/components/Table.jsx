@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { API_URL } from "../config";
 import Axios from "axios";
 import { numberFormat } from "./Number";
 import { down, up } from "../assets";
+import { urlPrices } from "../utils";
 
 export const Table = () => {
   const [coins, setCoins] = useState([]);
@@ -12,7 +12,7 @@ export const Table = () => {
   const getData = async () => {
     setErr("");
     try {
-      const res = await Axios.get(API_URL, {
+      const res = await Axios.get(urlPrices, {
         headers: {
           "X-RapidAPI-Key":
             "455affff65mshe9ffe19f6d57db7p152bcejsncff8d11bc367",

@@ -1,6 +1,8 @@
 import binance from "./binance.png";
 import logo from "./intmaxlog.png";
-
+import kazu from "./kazu.png";
+import leo from './leo.png' 
+import mai from './mai.jpeg'
 import menu from "./menu.svg";
 import close from "./close.svg";
 import google from "./google.svg";
@@ -27,6 +29,9 @@ import wallet from "./wallet.svg";
 import security from "./security.svg";
 
 export {
+  kazu,
+  mai,
+  leo,
   security,
   wallet,
   finger,

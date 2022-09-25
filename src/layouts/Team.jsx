@@ -1,12 +1,11 @@
-import React from 'react'
-
+import {leo, mai, kazu} from '../assets/index'
 const Team = () => {
     return (
         <div>
             <div className="container flex justify-center mx-auto pt-16 bg-primary">
                 <div>
-                    <p className="text-gray-400 text-lg text-center font-normal pb-3">BUILDING TEAM</p>
-                    <h1 className="xl:text-4xl text-3xl text-center text-white font-bold pb-6 sm:w-4/6 w-5/6 mx-auto">The Talented People Behind the Scenes of the Organization</h1>
+                    <p className="text-gray-400 text-lg text-center font-normal pb-3">Our Team</p>
+                    <h1 className="xl:text-4xl text-3xl text-center text-white font-bold pb-6 sm:w-4/6 w-5/6 mx-auto">The Talented People Behind of the Organization</h1>
                 </div>
             </div>
             <div className="w-full px-10 pt-10">
@@ -17,7 +16,7 @@ const Team = () => {
                             <div className="rounded overflow-hidden shadow-md">
                                 <div className="absolute -mt-20 w-full flex justify-center">
                                     <div className="h-32 w-32">
-                                        <img src="https://i.ibb.co/Lr24yJ5/leo.jpg" alt className="rounded-full object-cover h-full w-full shadow-md" />
+                                        <img src={leo} alt className="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
                                 <div className="px-6 mt-16">
@@ -56,7 +55,7 @@ const Team = () => {
                             <div className="rounded overflow-hidden shadow-md">
                                 <div className="absolute -mt-20 w-full flex justify-center">
                                     <div className="h-32 w-32">
-                                        <img src="https://i.ibb.co/JvqGVGc/m.jpg" alt className="rounded-full object-cover h-full w-full shadow-md" />
+                                        <img src={mai} alt className="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
                                 <div className="px-6 mt-16">
@@ -95,11 +94,11 @@ const Team = () => {
                             <div className="rounded overflow-hidden shadow-md">
                                 <div className="absolute -mt-20 w-full flex justify-center">
                                     <div className="h-32 w-32">
-                                        <img src="https://i.ibb.co/h2zXbHh/20240109.jpg" alt className="rounded-full object-cover h-full w-full shadow-md" />
+                                        <img src={kazu} alt className="rounded-full object-cover h-full w-full shadow-md" />
                                     </div>
                                 </div>
                                 <div className="px-6 mt-16">
-                                    <div className="font-bold text-white text-3xl text-center pb-1">Kasuki Kasahara</div>
+                                    <div className="font-bold text-white text-3xl text-center pb-1">Kasuko Kasahara</div>
                                     <p className="text-gray-400 text-sm text-center">Programmer</p>
                                     <p className="text-center text-gray-600 text-base pt-3 font-normal">Worked as a senior developer at Recruit Technologies. Ex-CEO of Aideal technology. Worked on providing zkCloud system and lounched it in September 2021.</p>
                                     <div className="w-full flex justify-center pt-5 pb-5">

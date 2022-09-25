@@ -2,7 +2,9 @@ import axios from "axios";
 import dayjs from "dayjs";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Footer, Navbar } from "../layouts";
+import { Footer } from "../layouts";
+import { NavbarBlog } from "../layouts/NavbarBlog";
+import { urlNews } from "../utils";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -11,17 +13,14 @@ const News = () => {
 
   const getData = async () => {
     try {
-      const res = await axios.get(
-        "https://bing-news-search1.p.rapidapi.com/news/search?q=Ethereum&count=9&setLang=en&freshness=Week&originalImg=true&textFormat=Raw&safeSearch=Moderate",
-        {
-          headers: {
-            "X-BingApis-SDK": "true",
-            "X-RapidAPI-Key":
-              "1d08804e01msh27ff3d62f29d1eep132f4cjsn1e70a1681696",
-            "X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com",
-          },
-        }
-      );
+      const res = await axios.get(urlNews, {
+        headers: {
+          "X-BingApis-SDK": "true",
+          "X-RapidAPI-Key":
+            "1d08804e01msh27ff3d62f29d1eep132f4cjsn1e70a1681696",
+          "X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com",
+        },
+      });
       setNews(res.data.value);
       setLoading(false);
       console.log("hola");
@@ -34,8 +33,8 @@ const News = () => {
   }, []);
   return (
     <div className="bg-primary w-full overflow-hidden">
-      <Navbar />
-      <section className="pt-20 lg:pt-[120px] pb-10 lg:pb-20 mx-10 md:mx-20">
+      <NavbarBlog/>
+      <section className="pt-36 lg:pt-[120px] pb-10 lg:pb-20 mx-10 md:mx-36">
         <div className="container">
           <div className="flex flex-wrap -mx-4">
             {news.map((index) => (
