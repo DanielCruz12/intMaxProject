@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   return (
     <div
-      className={`${styles.paddingX} ${styles.flexCenter} fixed z-10 mb-24 bgG w-full`}
+      className={`${styles.paddingX} ${styles.flexCenter} fixed z-10 mb-26 bgG w-full`}
     >
       <div className={`${styles.boxWidth}`}>
         <nav className="mx-2 px-2 mb-4 w-full flex py-6 justify-center items-center navbar">
@@ -55,7 +55,7 @@ export const Navbar = () => {
             >
               <ul className="list-none flex flex-col justify-end items-center flex-1">
                 <Link
-                  className="font-poppins font-normal cursor-pointer text-[16px] text-white ml-10 "
+                  className="font-poppins font-normal cursor-pointer text-[16px] text-white pb-2 pl-10 mr-10 "
                   to="/home"
                 >
                   Home

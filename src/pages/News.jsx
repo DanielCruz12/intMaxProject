@@ -33,8 +33,8 @@ const News = () => {
   }, []);
   return (
     <div className="bg-primary w-full overflow-hidden">
-      <NavbarBlog/>
-      <section className="pt-36 lg:pt-[120px] pb-10 lg:pb-20 mx-10 md:mx-36">
+      <NavbarBlog />
+      <section className="pt-36 md:pt-40 pb-10 lg:pb-20 mx-10 md:mx-36">
         <div className="container">
           <div className="flex flex-wrap -mx-4">
             {news.map((index) => (
@@ -43,7 +43,7 @@ const News = () => {
                   <div className="rounded overflow-hidden mb-8">
                     <div className="block">
                       <img
-                        className="w-full transition group-hover:scale-125 group-hover:rotate-6"
+                        className="w-full transition group-hover:scale-125 group-hover:rotate-6 max-h-50"
                         src={index.image.contentUrl}
                       />
                     </div>
@@ -55,10 +55,10 @@ const News = () => {
                       </Dayjs> */}
                       {index.datePublished}
                     </span>
-                    <h3 className="font-semibold text-white text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
+                    <h3 className="font-semibold text-white text-[19px] md:text[23px] mb-4 inline-block text-dark hover:text-primary">
                       {index.name}
                     </h3>
-                    <p className="text-base text-white text-body-color">
+                    <p className="text-base text-white text-[16px] md:text[20px] text-body-color">
                       {index.description}
                     </p>
                     <p className="text-underline text-blue-500">

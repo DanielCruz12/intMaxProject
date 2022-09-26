@@ -44,7 +44,7 @@ export const NavbarBlog = () => {
             >
               <ul className="list-none flex flex-col justify-end items-center flex-1">
                 <Link
-                  className="font-poppins font-normal cursor-pointer text-[16px] text-white ml-10 "
+                  className="font-poppins font-normal cursor-pointer text-[16px] text-white pb-2 pl-10 mr-10 "
                   to="/home"
                 >
                   Home

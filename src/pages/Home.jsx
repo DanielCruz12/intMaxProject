@@ -7,7 +7,7 @@ import Faq from "../components/Faq";
 
 const Home = () => {
   return (
-    <div className="bg-primary w-full overflow-hidden">
+    <div className="bg-primary w-full overflow-hidden ">
       <Navbar />
       <Hero />
       <Table />
