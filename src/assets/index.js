@@ -27,8 +27,10 @@ import down from "./decrease.png";
 import finger from "./finger.svg";
 import wallet from "./wallet.svg";
 import security from "./security.svg";
+import loa from './load.gif'
 
 export {
+  loa,
   kazu,
   mai,
   leo,
