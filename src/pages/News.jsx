@@ -11,21 +11,21 @@ const News = () => {
   const [news, setNews] = useState([]);
   const [loader, setLoader] = useState(true);
   const day = dayjs();
-
-
+/*   34d093cb83msh879e52d1171632bp1da699jsn6da5c933a41c
+ */
   const getData = async () => {
     try {
       const res = await axios.get(urlNews, {
         headers: {
-          "X-BingApis-SDK": "true",
-          "X-RapidAPI-Key":
-            "1d08804e01msh27ff3d62f29d1eep132f4cjsn1e70a1681696",
-          "X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com",
-        },
+          'X-BingApis-SDK': 'true',
+          'X-RapidAPI-Key': '1d08804e01msh27ff3d62f29d1eep132f4cjsn1e70a1681696',
+          'X-RapidAPI-Host': 'bing-news-search1.p.rapidapi.com'
+        }
       });
       setTimeout(function () {
-        setNews(res.data.value);
-        setLoader(false);
+        console.log(res)
+         setNews(res.data.value);
+         setLoader(false);
       }, 1000)
     } catch (error) {
       console.log(error.message);
@@ -50,7 +50,7 @@ const News = () => {
                         <div className="block">
                           <img
                             className="w-full transition group-hover:scale-125 group-hover:rotate-6 max-h-50"
-                            src={index.image.contentUrl}
+                            src={index?.image?.contentUrl}
                           />
                         </div>
                       </div>
@@ -84,7 +84,7 @@ const News = () => {
           </div>
         </section>
       </>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
